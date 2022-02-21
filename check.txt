@@ -1,0 +1,9 @@
+ check list: calculator
+ id: 145
+ bild: 12586
+ environment: Windows 10, Chrome
+ test date: 22.02.2022
+ author: Che Guevara
+ step: sum: expected result|actual result
+ step: multiply: expected result|actual result
+ step: division: expected result|actual result

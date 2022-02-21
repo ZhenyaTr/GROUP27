@@ -3,7 +3,9 @@ summary: the button on the registration page is not pressed after entering valid
 version: bild 325 
 steps to reproduce: 1. 2. .3 .4. 5. 
 severity: blocker
-priority: high 
+priority: high
+expected result: A
+actual result: B
 status: new 
 author: Maximov
 assigned_to: Tutunov 

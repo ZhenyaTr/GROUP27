@@ -1,0 +1,68 @@
+GitHub. HW_2
+
+1. На локальном репозитории сделать ветки для:
+
+- Postman === git branch Postman
+- Jmeter === git branch Jmeter
+- CheckLists === git branch CheckLists
+- Bag Reports === git branch Bag_Reports
+- SQL === git branch SQL
+- Charles === git branch Charles
+- Mobile testing === git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий === 
+git checkout Postman, git push -u origin Postman
+git checkout Jmeter, git push -u origin Jmeter
+git checkout CheckLists, git push -u origin CheckLists
+git checkout Bag_Reports, git push -u origin Bag_Reports
+git checkout SQL, git push -u origin SQL
+git checkout Charles, git push -u origin Charles
+git checkout Mobile_testing, git push -u origin Mobile_testing
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта ===
+  git checkout Bag_Reports 
+  cat > bg.txt
+	id: 1
+	summary: the button on the registration page is not pressed after entering valid data
+	version: bild 325 
+	steps to reproduce: 1. 2. .3 .4. 5. 
+	severity: blocker
+	priority: high
+	expected result: A
+	actual result: B
+	status: new 
+	author: Maximov
+	assigned_to: Tutunov 
+	description: Chrome 98.0.4758.102 64 bit Windows 10
+
+4. Запушить структуру багрепорта на внешний репозиторий ===
+ git add bg.txt, git commit -m "strukrura bg", git push либо в одну строчку через "|"
+
+5. Вмержить ветку Bag Reports в Main ===
+git checkout main, git merge Bag_Reports
+
+6. Запушить main на внешний репозиторий. === 
+ git push -u origin main
+
+7. В ветке CheckLists набросать структуру чек листа.===
+git checkout CheckLists, cat > check.txt
+ id: 145
+ bild: 12586
+ environment: Windows 10, Chrome
+ test date: 22.02.2022
+ author: Che Guevara
+ step: sum: expected result|actual result
+ step: multiply: expected result|actual result
+ step: division: expected result|actual result
+ step: subtraction: expected result|actual result
+ Expected result: А
+ Status: new
+
+8. Запушить структуру на внешний репозиторий === 
+git add check.txt, git commit -m "strukrura checklist", git push либо в одну строчку через "|"
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main ===
+Open a pull request из CheckLists в main
+
+10. Синхронизировать Внешнюю и Локальную ветки Main ===
+git checkout main, git pull

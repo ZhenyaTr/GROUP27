@@ -7,3 +7,5 @@
  step: sum: expected result|actual result
  step: multiply: expected result|actual result
  step: division: expected result|actual result
+ Expected result: А
+ Status: new
